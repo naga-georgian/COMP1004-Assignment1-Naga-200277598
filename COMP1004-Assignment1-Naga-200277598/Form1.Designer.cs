@@ -42,7 +42,11 @@
             this.PrintButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
+            this.FrancaisRadioButton = new System.Windows.Forms.RadioButton();
+            this.LanguageGroupBox = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.LanguageGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // EmployeeNameLabel
@@ -163,11 +167,45 @@
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
+            // EnglishRadioButton
+            // 
+            this.EnglishRadioButton.AutoSize = true;
+            this.EnglishRadioButton.Location = new System.Drawing.Point(29, 34);
+            this.EnglishRadioButton.Name = "EnglishRadioButton";
+            this.EnglishRadioButton.Size = new System.Drawing.Size(59, 17);
+            this.EnglishRadioButton.TabIndex = 14;
+            this.EnglishRadioButton.TabStop = true;
+            this.EnglishRadioButton.Text = "English";
+            this.EnglishRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // FrancaisRadioButton
+            // 
+            this.FrancaisRadioButton.AutoSize = true;
+            this.FrancaisRadioButton.Location = new System.Drawing.Point(29, 57);
+            this.FrancaisRadioButton.Name = "FrancaisRadioButton";
+            this.FrancaisRadioButton.Size = new System.Drawing.Size(65, 17);
+            this.FrancaisRadioButton.TabIndex = 15;
+            this.FrancaisRadioButton.TabStop = true;
+            this.FrancaisRadioButton.Text = "Francais";
+            this.FrancaisRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // LanguageGroupBox
+            // 
+            this.LanguageGroupBox.Controls.Add(this.EnglishRadioButton);
+            this.LanguageGroupBox.Controls.Add(this.FrancaisRadioButton);
+            this.LanguageGroupBox.Location = new System.Drawing.Point(162, 19);
+            this.LanguageGroupBox.Name = "LanguageGroupBox";
+            this.LanguageGroupBox.Size = new System.Drawing.Size(148, 100);
+            this.LanguageGroupBox.TabIndex = 16;
+            this.LanguageGroupBox.TabStop = false;
+            this.LanguageGroupBox.Text = "Language";
+            // 
             // SalesBonusForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(314, 325);
+            this.Controls.Add(this.LanguageGroupBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.PrintButton);
@@ -185,6 +223,8 @@
             this.Name = "SalesBonusForm";
             this.Text = "Sales Bonus";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.LanguageGroupBox.ResumeLayout(false);
+            this.LanguageGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,6 +246,9 @@
         private System.Windows.Forms.Button PrintButton;
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.RadioButton EnglishRadioButton;
+        private System.Windows.Forms.RadioButton FrancaisRadioButton;
+        private System.Windows.Forms.GroupBox LanguageGroupBox;
     }
 }
 
