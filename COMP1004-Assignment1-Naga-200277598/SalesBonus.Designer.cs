@@ -40,7 +40,7 @@
             this.SalesBonusTextBox = new System.Windows.Forms.TextBox();
             this.CalculateSalesBonusButton = new System.Windows.Forms.Button();
             this.PrintButton = new System.Windows.Forms.Button();
-            this.ClearButton = new System.Windows.Forms.Button();
+            this.NextButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
             this.FrancaisRadioButton = new System.Windows.Forms.RadioButton();
@@ -98,7 +98,7 @@
             // 
             this.EmployeeNameTextBox.Location = new System.Drawing.Point(132, 142);
             this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
-            this.EmployeeNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.EmployeeNameTextBox.Size = new System.Drawing.Size(178, 20);
             this.EmployeeNameTextBox.TabIndex = 5;
             // 
             // EmployeeIDTextBox
@@ -133,30 +133,32 @@
             // 
             // CalculateSalesBonusButton
             // 
-            this.CalculateSalesBonusButton.Location = new System.Drawing.Point(24, 299);
+            this.CalculateSalesBonusButton.Location = new System.Drawing.Point(6, 299);
             this.CalculateSalesBonusButton.Name = "CalculateSalesBonusButton";
             this.CalculateSalesBonusButton.Size = new System.Drawing.Size(75, 23);
             this.CalculateSalesBonusButton.TabIndex = 10;
             this.CalculateSalesBonusButton.Text = "Calculate";
             this.CalculateSalesBonusButton.UseVisualStyleBackColor = true;
+            this.CalculateSalesBonusButton.Click += new System.EventHandler(this.CalculateSalesBonusButton_Click);
             // 
             // PrintButton
             // 
-            this.PrintButton.Location = new System.Drawing.Point(114, 299);
+            this.PrintButton.Location = new System.Drawing.Point(234, 299);
             this.PrintButton.Name = "PrintButton";
             this.PrintButton.Size = new System.Drawing.Size(75, 23);
             this.PrintButton.TabIndex = 11;
             this.PrintButton.Text = "Print";
             this.PrintButton.UseVisualStyleBackColor = true;
             // 
-            // ClearButton
+            // NextButton
             // 
-            this.ClearButton.Location = new System.Drawing.Point(204, 299);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(75, 23);
-            this.ClearButton.TabIndex = 12;
-            this.ClearButton.Text = "Clear";
-            this.ClearButton.UseVisualStyleBackColor = true;
+            this.NextButton.Location = new System.Drawing.Point(120, 299);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(75, 23);
+            this.NextButton.TabIndex = 12;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // pictureBox1
             // 
@@ -178,6 +180,7 @@
             this.EnglishRadioButton.TabStop = true;
             this.EnglishRadioButton.Text = "English";
             this.EnglishRadioButton.UseVisualStyleBackColor = true;
+            this.EnglishRadioButton.CheckedChanged += new System.EventHandler(this.EnglishRadioButton_CheckedChanged);
             // 
             // FrancaisRadioButton
             // 
@@ -189,6 +192,7 @@
             this.FrancaisRadioButton.TabStop = true;
             this.FrancaisRadioButton.Text = "Francais";
             this.FrancaisRadioButton.UseVisualStyleBackColor = true;
+            this.FrancaisRadioButton.CheckedChanged += new System.EventHandler(this.FrancaisRadioButton_CheckedChanged);
             // 
             // LanguageGroupBox
             // 
@@ -208,7 +212,7 @@
             this.ClientSize = new System.Drawing.Size(314, 325);
             this.Controls.Add(this.LanguageGroupBox);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ClearButton);
+            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.PrintButton);
             this.Controls.Add(this.CalculateSalesBonusButton);
             this.Controls.Add(this.SalesBonusTextBox);
@@ -246,7 +250,7 @@
         private System.Windows.Forms.TextBox SalesBonusTextBox;
         private System.Windows.Forms.Button CalculateSalesBonusButton;
         private System.Windows.Forms.Button PrintButton;
-        private System.Windows.Forms.Button ClearButton;
+        private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RadioButton EnglishRadioButton;
         private System.Windows.Forms.RadioButton FrancaisRadioButton;
