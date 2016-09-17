@@ -16,7 +16,7 @@ namespace COMP1004_Assignment1_Naga_200277598
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new SalesBonusForm());
         }
     }
 }
