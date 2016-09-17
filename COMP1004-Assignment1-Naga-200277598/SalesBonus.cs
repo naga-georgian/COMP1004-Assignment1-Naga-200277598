@@ -55,5 +55,10 @@ namespace COMP1004_Assignment1_Naga_200277598
 
 
         }
+
+        private void PrintButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("The form is being sent to the printer. Thank you!");
+        }
     }
 }
