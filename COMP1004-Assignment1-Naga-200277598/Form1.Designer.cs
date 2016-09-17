@@ -170,6 +170,7 @@
             // EnglishRadioButton
             // 
             this.EnglishRadioButton.AutoSize = true;
+            this.EnglishRadioButton.Checked = true;
             this.EnglishRadioButton.Location = new System.Drawing.Point(29, 34);
             this.EnglishRadioButton.Name = "EnglishRadioButton";
             this.EnglishRadioButton.Size = new System.Drawing.Size(59, 17);
@@ -221,6 +222,7 @@
             this.Controls.Add(this.EmployeeIDLabel);
             this.Controls.Add(this.EmployeeNameLabel);
             this.Name = "SalesBonusForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sales Bonus";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.LanguageGroupBox.ResumeLayout(false);
