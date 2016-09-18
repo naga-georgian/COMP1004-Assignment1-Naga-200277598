@@ -19,7 +19,11 @@ namespace COMP1004_Assignment1_Naga_200277598
 
         private void EnglishRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            EmployeeNameLabel.Text = "Employee's Name";
+            EmployeeIDLabel.Text = "Employee ID";
+            HoursWorkedLabel.Text = "Hours Worked";
+            TotalSalesLabel.Text = "Total Sales";
+            SalesBonusLabel.Text = "Sales Bonus";
         }
 
         private void FrancaisRadioButton_CheckedChanged(object sender, EventArgs e)
