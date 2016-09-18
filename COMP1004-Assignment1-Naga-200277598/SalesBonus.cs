@@ -68,5 +68,15 @@ namespace COMP1004_Assignment1_Naga_200277598
         {
             MessageBox.Show("The form is being sent to the printer. Thank you!");
         }
+
+        private void GermanRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+            EmployeeNameLabel.Text = "Mitarbeiter - Namen";
+            EmployeeIDLabel.Text = "Angestellten ID";
+            HoursWorkedLabel.Text = "Arbeitsstunden";
+            TotalSalesLabel.Text = "Gesamtumsatz";
+            SalesBonusLabel.Text = "Der Umsatz Bonus"; 
+        }
     }
 }
