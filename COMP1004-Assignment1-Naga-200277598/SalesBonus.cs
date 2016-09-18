@@ -99,11 +99,11 @@ namespace COMP1004_Assignment1_Naga_200277598
 
         private void PortugueseRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            EmployeeNameLabel.Text = "Mitarbeiter - Namen";
-            EmployeeIDLabel.Text = "Angestellten ID";
-            HoursWorkedLabel.Text = "Arbeitsstunden";
-            TotalSalesLabel.Text = "Gesamtumsatz";
-            SalesBonusLabel.Text = "Der Umsatz Bonus";
+            EmployeeNameLabel.Text = "Nome do empregado";
+            EmployeeIDLabel.Text = "ID do Empregado";
+            HoursWorkedLabel.Text = "Horas trabalhadas";
+            TotalSalesLabel.Text = "Vendas totais";
+            SalesBonusLabel.Text = "Bonus de Vendas";
         }
     }
 }
