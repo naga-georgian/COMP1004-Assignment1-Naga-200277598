@@ -78,5 +78,32 @@ namespace COMP1004_Assignment1_Naga_200277598
             TotalSalesLabel.Text = "Gesamtumsatz";
             SalesBonusLabel.Text = "Der Umsatz Bonus"; 
         }
+
+        private void SpanishRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            EmployeeNameLabel.Text = "Nombre del empleado";
+            EmployeeIDLabel.Text = "ID de empleado";
+            HoursWorkedLabel.Text = "horas trabajadas";
+            TotalSalesLabel.Text = "Ventas totales";
+            SalesBonusLabel.Text = "Bono de ventas";
+        }
+
+        private void RussianRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            EmployeeNameLabel.Text = "Mitarbeiter - Namen";
+            EmployeeIDLabel.Text = "Angestellten ID";
+            HoursWorkedLabel.Text = "Arbeitsstunden";
+            TotalSalesLabel.Text = "Gesamtumsatz";
+            SalesBonusLabel.Text = "Der Umsatz Bonus";
+        }
+
+        private void PortugueseRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            EmployeeNameLabel.Text = "Mitarbeiter - Namen";
+            EmployeeIDLabel.Text = "Angestellten ID";
+            HoursWorkedLabel.Text = "Arbeitsstunden";
+            TotalSalesLabel.Text = "Gesamtumsatz";
+            SalesBonusLabel.Text = "Der Umsatz Bonus";
+        }
     }
 }

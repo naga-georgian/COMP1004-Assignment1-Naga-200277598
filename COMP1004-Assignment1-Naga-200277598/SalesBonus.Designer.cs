@@ -236,6 +236,7 @@
             this.SpanishRadioButton.TabStop = true;
             this.SpanishRadioButton.Text = "Spanish";
             this.SpanishRadioButton.UseVisualStyleBackColor = true;
+            this.SpanishRadioButton.CheckedChanged += new System.EventHandler(this.SpanishRadioButton_CheckedChanged);
             // 
             // RussianRadioButton
             // 
@@ -247,6 +248,7 @@
             this.RussianRadioButton.TabStop = true;
             this.RussianRadioButton.Text = "Russian";
             this.RussianRadioButton.UseVisualStyleBackColor = true;
+            this.RussianRadioButton.CheckedChanged += new System.EventHandler(this.RussianRadioButton_CheckedChanged);
             // 
             // PortugueseRadioButton
             // 
@@ -258,6 +260,7 @@
             this.PortugueseRadioButton.TabStop = true;
             this.PortugueseRadioButton.Text = "Portuguese";
             this.PortugueseRadioButton.UseVisualStyleBackColor = true;
+            this.PortugueseRadioButton.CheckedChanged += new System.EventHandler(this.PortugueseRadioButton_CheckedChanged);
             // 
             // SalesBonusForm
             // 
