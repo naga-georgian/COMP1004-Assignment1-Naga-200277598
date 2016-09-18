@@ -42,11 +42,18 @@ namespace COMP1004_Assignment1_Naga_200277598
             double totalBonusAmount;
             double salesBonus;
 
-            percentageOfHoursWorked = Convert.ToDouble(HoursWorkedTextBox.Text) / 160;
-            totalBonusAmount = Convert.ToDouble(TotalSalesTextBox.Text) * 0.02;
-            salesBonus = percentageOfHoursWorked * totalBonusAmount;
-            SalesBonusTextBox.Text = salesBonus.ToString();
-            
+            if (Convert.ToDouble(HoursWorkedTextBox.Text) > 0 && Convert.ToDouble(HoursWorkedTextBox.Text) <= 160) {
+
+                percentageOfHoursWorked = Convert.ToDouble(HoursWorkedTextBox.Text) / 160;
+                totalBonusAmount = Convert.ToDouble(TotalSalesTextBox.Text) * 0.02;
+                salesBonus = percentageOfHoursWorked * totalBonusAmount;
+                SalesBonusTextBox.Text = salesBonus.ToString();
+                TotalSalesTextBox.Text = "$" + TotalSalesTextBox.Text;
+            }
+            else
+            {
+                MessageBox.Show("Hours Worked: Enter a value from 0 to 160");
+            }
 
 
 

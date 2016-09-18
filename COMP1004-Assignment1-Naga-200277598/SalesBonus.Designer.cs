@@ -102,28 +102,28 @@
             // 
             this.EmployeeNameTextBox.Location = new System.Drawing.Point(132, 142);
             this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
-            this.EmployeeNameTextBox.Size = new System.Drawing.Size(178, 20);
+            this.EmployeeNameTextBox.Size = new System.Drawing.Size(241, 20);
             this.EmployeeNameTextBox.TabIndex = 5;
             // 
             // EmployeeIDTextBox
             // 
             this.EmployeeIDTextBox.Location = new System.Drawing.Point(132, 169);
             this.EmployeeIDTextBox.Name = "EmployeeIDTextBox";
-            this.EmployeeIDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.EmployeeIDTextBox.Size = new System.Drawing.Size(134, 20);
             this.EmployeeIDTextBox.TabIndex = 6;
             // 
             // HoursWorkedTextBox
             // 
             this.HoursWorkedTextBox.Location = new System.Drawing.Point(132, 210);
             this.HoursWorkedTextBox.Name = "HoursWorkedTextBox";
-            this.HoursWorkedTextBox.Size = new System.Drawing.Size(100, 20);
+            this.HoursWorkedTextBox.Size = new System.Drawing.Size(134, 20);
             this.HoursWorkedTextBox.TabIndex = 7;
             // 
             // TotalSalesTextBox
             // 
             this.TotalSalesTextBox.Location = new System.Drawing.Point(132, 236);
             this.TotalSalesTextBox.Name = "TotalSalesTextBox";
-            this.TotalSalesTextBox.Size = new System.Drawing.Size(100, 20);
+            this.TotalSalesTextBox.Size = new System.Drawing.Size(134, 20);
             this.TotalSalesTextBox.TabIndex = 8;
             // 
             // SalesBonusTextBox
@@ -132,7 +132,7 @@
             this.SalesBonusTextBox.Location = new System.Drawing.Point(132, 262);
             this.SalesBonusTextBox.Name = "SalesBonusTextBox";
             this.SalesBonusTextBox.ReadOnly = true;
-            this.SalesBonusTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SalesBonusTextBox.Size = new System.Drawing.Size(134, 20);
             this.SalesBonusTextBox.TabIndex = 9;
             // 
             // CalculateSalesBonusButton
@@ -147,7 +147,7 @@
             // 
             // PrintButton
             // 
-            this.PrintButton.Location = new System.Drawing.Point(234, 299);
+            this.PrintButton.Location = new System.Drawing.Point(298, 299);
             this.PrintButton.Name = "PrintButton";
             this.PrintButton.Size = new System.Drawing.Size(75, 23);
             this.PrintButton.TabIndex = 11;
@@ -157,7 +157,7 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(120, 299);
+            this.NextButton.Location = new System.Drawing.Point(152, 299);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(75, 23);
             this.NextButton.TabIndex = 12;
