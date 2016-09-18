@@ -90,11 +90,11 @@ namespace COMP1004_Assignment1_Naga_200277598
 
         private void RussianRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            EmployeeNameLabel.Text = "Mitarbeiter - Namen";
-            EmployeeIDLabel.Text = "Angestellten ID";
-            HoursWorkedLabel.Text = "Arbeitsstunden";
-            TotalSalesLabel.Text = "Gesamtumsatz";
-            SalesBonusLabel.Text = "Der Umsatz Bonus";
+            EmployeeNameLabel.Text = "Имя работника";
+            EmployeeIDLabel.Text = "Сотрудник ID";
+            HoursWorkedLabel.Text = "Отработанные часы";
+            TotalSalesLabel.Text = "Тотальная распродажа";
+            SalesBonusLabel.Text = "Бонус продаж";
         }
 
         private void PortugueseRadioButton_CheckedChanged(object sender, EventArgs e)
