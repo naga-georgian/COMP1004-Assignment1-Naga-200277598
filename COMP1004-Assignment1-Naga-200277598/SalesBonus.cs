@@ -9,6 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Sharp Mail Order	– SALES	BONUS
+// Naga Rimmalapudi
+// Sept 19, 2016
+/*Sales bonus should be calculated with provided details like Total Sales and hours worked. 
+ Sales Bonus = (Hours Worked / 160) * (Total Sales * 0.02) */
+
+
 namespace COMP1004_Assignment1_Naga_200277598
 {
     public partial class SalesBonusForm : Form
