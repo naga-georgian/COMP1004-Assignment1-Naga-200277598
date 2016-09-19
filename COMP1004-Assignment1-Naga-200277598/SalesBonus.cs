@@ -30,6 +30,9 @@ namespace COMP1004_Assignment1_Naga_200277598
             HoursWorkedLabel.Text = "Hours Worked";
             TotalSalesLabel.Text = "Total Sales";
             SalesBonusLabel.Text = "Sales Bonus";
+            CalculateSalesBonusButton.Text = "Calculate";
+            NextButton.Text = "Next";
+            PrintButton.Text = "Print";
         }
 
         private void FrancaisRadioButton_CheckedChanged(object sender, EventArgs e)
