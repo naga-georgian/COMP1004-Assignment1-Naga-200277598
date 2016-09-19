@@ -8,13 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 // Sharp Mail Order	– SALES	BONUS
 // Naga Rimmalapudi
 // Sept 19, 2016
-/*Sales bonus should be calculated with provided details like Total Sales and hours worked. 
- Sales Bonus = (Hours Worked / 160) * (Total Sales * 0.02) */
-
+//Sales bonus should be calculated with provided details like Total Sales and hours worked. 
+// Sales Bonus = (Hours Worked / 160) * (Total Sales * 0.02)
 
 namespace COMP1004_Assignment1_Naga_200277598
 {
@@ -32,9 +30,6 @@ namespace COMP1004_Assignment1_Naga_200277598
             HoursWorkedLabel.Text = "Hours Worked";
             TotalSalesLabel.Text = "Total Sales";
             SalesBonusLabel.Text = "Sales Bonus";
-            CalculateSalesBonusButton.Text = "Calculate";
-            NextButton.Text = "Next";
-            PrintButton.Text = "Print";
         }
 
         private void FrancaisRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -55,8 +50,10 @@ namespace COMP1004_Assignment1_Naga_200277598
             double percentageOfHoursWorked;
             double totalBonusAmount;
             double salesBonus;
-            try{
-                if (Convert.ToDouble(HoursWorkedTextBox.Text) > 0 && Convert.ToDouble(HoursWorkedTextBox.Text) <= 160) {
+            try
+            {
+                if (Convert.ToDouble(HoursWorkedTextBox.Text) > 0 && Convert.ToDouble(HoursWorkedTextBox.Text) <= 160)
+                {
 
                     percentageOfHoursWorked = Convert.ToDouble(HoursWorkedTextBox.Text) / 160;
                     totalBonusAmount = Convert.ToDouble(TotalSalesTextBox.Text) * 0.02;
@@ -67,11 +64,10 @@ namespace COMP1004_Assignment1_Naga_200277598
                 else
                 {
                     MessageBox.Show("Hours Worked: Enter a value from 0 to 160");
-                    clearAll();
-
                 }
-            }
 
+
+            }
             catch(Exception exception)
             {
                 MessageBox.Show("Invalid Data Entered", "Input Error");
@@ -79,28 +75,32 @@ namespace COMP1004_Assignment1_Naga_200277598
                 clearAll();
             }
 
-
         }
-        
+
         private void NextButton_Click(object sender, EventArgs e)
         {
+
             clearAll();
+
         }
 
         private void clearAll()
         {
             EmployeeNameTextBox.Focus();
-            EmployeeNameTextBox.Text = "";
-            EmployeeIDTextBox.Text = "";
-            HoursWorkedTextBox.Text = "";
-            TotalSalesTextBox.Text = "";
-            SalesBonusTextBox.Text = "";
+            EmployeeNameTextBox.Text = " ";
+            EmployeeIDTextBox.Text = " ";
+            HoursWorkedTextBox.Text = " ";
+            TotalSalesTextBox.Text = " ";
+            SalesBonusTextBox.Text = " ";
         }
-    
-    
-    private void PrintButton_Click(object sender, EventArgs e)
+
+        private void PrintButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("The form is being sent to the printer. Thank you!");
+            if ((SalesBonusTextBox.Text) != "")
+                MessageBox.Show("The form is being sent to the printer. Thank you!");
+
+            else
+                MessageBox.Show("Please fill the form");
         }
 
         private void GermanRadioButton_CheckedChanged(object sender, EventArgs e)
