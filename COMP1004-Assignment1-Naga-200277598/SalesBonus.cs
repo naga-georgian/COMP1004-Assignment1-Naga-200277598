@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,9 @@ namespace COMP1004_Assignment1_Naga_200277598
             HoursWorkedLabel.Text = "Hours Worked";
             TotalSalesLabel.Text = "Total Sales";
             SalesBonusLabel.Text = "Sales Bonus";
+            CalculateSalesBonusButton.Text = "Calculate";
+            NextButton.Text = "Next";
+            PrintButton.Text = "Print";
         }
 
         private void FrancaisRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -33,45 +37,61 @@ namespace COMP1004_Assignment1_Naga_200277598
             HoursWorkedLabel.Text = "Heures travaillées";
             TotalSalesLabel.Text = "Ventes totales";
             SalesBonusLabel.Text = "Bonus de vente";
+            CalculateSalesBonusButton.Text = "Calculer";
+            NextButton.Text = "Prochain";
+            PrintButton.Text = "Impression";
         }
 
         private void CalculateSalesBonusButton_Click(object sender, EventArgs e)
         {
-           
+
             double percentageOfHoursWorked;
             double totalBonusAmount;
             double salesBonus;
+            try{
+                if (Convert.ToDouble(HoursWorkedTextBox.Text) > 0 && Convert.ToDouble(HoursWorkedTextBox.Text) <= 160) {
 
-            if (Convert.ToDouble(HoursWorkedTextBox.Text) > 0 && Convert.ToDouble(HoursWorkedTextBox.Text) <= 160) {
+                    percentageOfHoursWorked = Convert.ToDouble(HoursWorkedTextBox.Text) / 160;
+                    totalBonusAmount = Convert.ToDouble(TotalSalesTextBox.Text) * 0.02;
+                    salesBonus = percentageOfHoursWorked * totalBonusAmount;
+                    SalesBonusTextBox.Text = salesBonus.ToString();
+                    TotalSalesTextBox.Text = "$" + TotalSalesTextBox.Text;
+                }
+                else
+                {
+                    MessageBox.Show("Hours Worked: Enter a value from 0 to 160");
+                    clearAll();
 
-                percentageOfHoursWorked = Convert.ToDouble(HoursWorkedTextBox.Text) / 160;
-                totalBonusAmount = Convert.ToDouble(TotalSalesTextBox.Text) * 0.02;
-                salesBonus = percentageOfHoursWorked * totalBonusAmount;
-                SalesBonusTextBox.Text = salesBonus.ToString();
-                TotalSalesTextBox.Text = "$" + TotalSalesTextBox.Text;
+                }
             }
-            else
+
+            catch(Exception exception)
             {
-                MessageBox.Show("Hours Worked: Enter a value from 0 to 160");
+                MessageBox.Show("Invalid Data Entered", "Input Error");
+                Debug.WriteLine(exception.Message);
+                clearAll();
             }
-
 
 
         }
-
+        
         private void NextButton_Click(object sender, EventArgs e)
         {
-            EmployeeNameTextBox.Focus();
-            EmployeeNameTextBox.Text = " ";
-            EmployeeIDTextBox.Text = " ";
-            HoursWorkedTextBox.Text = " ";
-            TotalSalesTextBox.Text = " ";
-            SalesBonusTextBox.Text = " ";
-
-
+            clearAll();
         }
 
-        private void PrintButton_Click(object sender, EventArgs e)
+        private void clearAll()
+        {
+            EmployeeNameTextBox.Focus();
+            EmployeeNameTextBox.Text = "";
+            EmployeeIDTextBox.Text = "";
+            HoursWorkedTextBox.Text = "";
+            TotalSalesTextBox.Text = "";
+            SalesBonusTextBox.Text = "";
+        }
+    
+    
+    private void PrintButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("The form is being sent to the printer. Thank you!");
         }
@@ -83,7 +103,10 @@ namespace COMP1004_Assignment1_Naga_200277598
             EmployeeIDLabel.Text = "Angestellten ID";
             HoursWorkedLabel.Text = "Arbeitsstunden";
             TotalSalesLabel.Text = "Gesamtumsatz";
-            SalesBonusLabel.Text = "Der Umsatz Bonus"; 
+            SalesBonusLabel.Text = "Der Umsatz Bonus";
+            CalculateSalesBonusButton.Text = "Berechnen";
+            NextButton.Text = "Nächster";
+            PrintButton.Text = "Drucken";
         }
 
         private void SpanishRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -93,6 +116,9 @@ namespace COMP1004_Assignment1_Naga_200277598
             HoursWorkedLabel.Text = "horas trabajadas";
             TotalSalesLabel.Text = "Ventas totales";
             SalesBonusLabel.Text = "Bono de ventas";
+            CalculateSalesBonusButton.Text = "Calcular";
+            NextButton.Text = "Siguiente";
+            PrintButton.Text = "Impresión";
         }
 
         private void RussianRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -102,6 +128,9 @@ namespace COMP1004_Assignment1_Naga_200277598
             HoursWorkedLabel.Text = "Отработанные часы";
             TotalSalesLabel.Text = "Тотальная распродажа";
             SalesBonusLabel.Text = "Бонус продаж";
+            CalculateSalesBonusButton.Text = "подсчитывать";
+            NextButton.Text = "следующий";
+            PrintButton.Text = "Распечатать";
         }
 
         private void PortugueseRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -111,6 +140,9 @@ namespace COMP1004_Assignment1_Naga_200277598
             HoursWorkedLabel.Text = "Horas trabalhadas";
             TotalSalesLabel.Text = "Vendas totais";
             SalesBonusLabel.Text = "Bonus de Vendas";
+            CalculateSalesBonusButton.Text = "Calcular";
+            NextButton.Text = "Próximo";
+            PrintButton.Text = "Impressão";
         }
     }
 }
