@@ -154,5 +154,10 @@ namespace COMP1004_Assignment1_Naga_200277598
             NextButton.Text = "Próximo";
             PrintButton.Text = "Impressão";
         }
+
+        private void SalesBonusForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
