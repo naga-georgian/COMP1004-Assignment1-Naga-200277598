@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 // Sharp Mail Order	– SALES	BONUS
-// Naga Rimmalapudi
+// Naga Rimmalapudi 200277598
 // Sept 19, 2016
 //Sales bonus should be calculated with provided details like Total Sales and hours worked. 
 // Sales Bonus = (Hours Worked / 160) * (Total Sales * 0.02)
@@ -23,6 +23,7 @@ namespace COMP1004_Assignment1_Naga_200277598
             InitializeComponent();
         }
 
+        // Labels and buttons change to English language when clicked on English radio button
         private void EnglishRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             EmployeeNameLabel.Text = "Employee's Name";
@@ -35,6 +36,7 @@ namespace COMP1004_Assignment1_Naga_200277598
             PrintButton.Text = "Print";
         }
 
+        // Labels and buttons change to French language when clicked on French radio button
         private void FrancaisRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             EmployeeNameLabel.Text = "Le nom de l'employé";
@@ -47,6 +49,7 @@ namespace COMP1004_Assignment1_Naga_200277598
             PrintButton.Text = "Impression";
         }
 
+        // Calculating Sales Bonus and enclosed the entities in Try, catch
         private void CalculateSalesBonusButton_Click(object sender, EventArgs e)
         {
 
@@ -55,6 +58,7 @@ namespace COMP1004_Assignment1_Naga_200277598
             double salesBonus;
             try
             {
+                // If else statement for hours worked <= 160
                 if (Convert.ToDouble(HoursWorkedTextBox.Text) > 0 && Convert.ToDouble(HoursWorkedTextBox.Text) <= 160)
                 {
 
@@ -80,6 +84,8 @@ namespace COMP1004_Assignment1_Naga_200277598
 
         }
 
+        // The functionality of Next button is that all the text boxes
+        //  in the application are cleared
         private void NextButton_Click(object sender, EventArgs e)
         {
 
@@ -87,6 +93,7 @@ namespace COMP1004_Assignment1_Naga_200277598
 
         }
 
+        // clearAll() method for clearing all text boxes in the form
         private void clearAll()
         {
             EmployeeNameTextBox.Focus();
@@ -97,6 +104,8 @@ namespace COMP1004_Assignment1_Naga_200277598
             SalesBonusTextBox.Text = " ";
         }
 
+        // The Print functionality is to say the messsage "The Form is being sent to the printer" if all the data is entered
+        // If the data is not entered it should say the message "Please fill the form".
         private void PrintButton_Click(object sender, EventArgs e)
         {
             if ((SalesBonusTextBox.Text) != "")
@@ -106,6 +115,7 @@ namespace COMP1004_Assignment1_Naga_200277598
                 MessageBox.Show("Please fill the form");
         }
 
+        // Labels and buttons change to German language when clicked on German radio button
         private void GermanRadioButton_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -119,6 +129,7 @@ namespace COMP1004_Assignment1_Naga_200277598
             PrintButton.Text = "Drucken";
         }
 
+        // Labels and buttons change to Spanish language when clicked on Spanish radio button
         private void SpanishRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             EmployeeNameLabel.Text = "Nombre del empleado";
@@ -131,6 +142,7 @@ namespace COMP1004_Assignment1_Naga_200277598
             PrintButton.Text = "Impresión";
         }
 
+        // Labels and buttons change to Russian language when clicked on Russian radio button
         private void RussianRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             EmployeeNameLabel.Text = "Имя работника";
@@ -143,6 +155,7 @@ namespace COMP1004_Assignment1_Naga_200277598
             PrintButton.Text = "Распечатать";
         }
 
+        // Labels and buttons change to Portuguese language when clicked on Portuguese radio button
         private void PortugueseRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             EmployeeNameLabel.Text = "Nome do empregado";
@@ -155,6 +168,7 @@ namespace COMP1004_Assignment1_Naga_200277598
             PrintButton.Text = "Impressão";
         }
 
+        // On closing the application, it should exit.
         private void SalesBonusForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
