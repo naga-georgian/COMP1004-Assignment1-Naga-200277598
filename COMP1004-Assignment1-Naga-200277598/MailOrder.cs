@@ -16,9 +16,9 @@ using System.Windows.Forms;
 
 namespace COMP1004_Assignment1_Naga_200277598
 {
-    public partial class SalesBonusForm : Form
+    public partial class MailOrderForm : Form
     {
-        public SalesBonusForm()
+        public MailOrderForm()
         {
             InitializeComponent();
         }

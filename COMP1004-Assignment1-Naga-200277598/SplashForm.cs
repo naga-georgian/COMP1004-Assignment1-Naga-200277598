@@ -20,7 +20,7 @@ namespace COMP1004_Assignment1_Naga_200277598
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
             SplashFormTimer.Enabled = false;
-            SalesBonusForm salesBonusForm = new SalesBonusForm();
+            MailOrderForm salesBonusForm = new MailOrderForm();
             salesBonusForm.Show();
             this.Hide();
         }

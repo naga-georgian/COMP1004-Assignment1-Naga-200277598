@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SalesBonus.cs">
+    <Compile Include="MailOrder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SalesBonus.Designer.cs">
-      <DependentUpon>SalesBonus.cs</DependentUpon>
+    <Compile Include="MailOrder.Designer.cs">
+      <DependentUpon>MailOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,8 +60,8 @@
     <Compile Include="SplashForm.Designer.cs">
       <DependentUpon>SplashForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SalesBonus.resx">
-      <DependentUpon>SalesBonus.cs</DependentUpon>
+    <EmbeddedResource Include="MailOrder.resx">
+      <DependentUpon>MailOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

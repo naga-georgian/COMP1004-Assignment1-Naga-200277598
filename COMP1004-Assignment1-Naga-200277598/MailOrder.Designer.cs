@@ -1,6 +1,6 @@
 ﻿namespace COMP1004_Assignment1_Naga_200277598
 {
-    partial class SalesBonusForm
+    partial class MailOrderForm
     {
         /// <summary>
         /// Required designer variable.
@@ -262,7 +262,7 @@
             this.GermanRadioButton.UseVisualStyleBackColor = true;
             this.GermanRadioButton.CheckedChanged += new System.EventHandler(this.GermanRadioButton_CheckedChanged);
             // 
-            // SalesBonusForm
+            // MailOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -282,9 +282,9 @@
             this.Controls.Add(this.HoursWorkedLabel);
             this.Controls.Add(this.EmployeeIDLabel);
             this.Controls.Add(this.EmployeeNameLabel);
-            this.Name = "SalesBonusForm";
+            this.Name = "MailOrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sales Bonus";
+            this.Text = "Mail Order";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SalesBonusForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.LanguageGroupBox.ResumeLayout(false);
