@@ -63,6 +63,16 @@ namespace COMP1004_Assignment1_Naga_200277598.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap giphy {
+            get {
+                object obj = ResourceManager.GetObject("giphy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Tank_Bonus_icon {
             get {
                 object obj = ResourceManager.GetObject("Tank-Bonus-icon", resourceCulture);
