@@ -112,7 +112,7 @@ namespace COMP1004_Assignment1_Naga_200277598
                 MessageBox.Show("The form is being sent to the printer. Thank you!");
 
             else
-                MessageBox.Show("Please fill the form");
+                MessageBox.Show("Please fill the form", "Input Error");
         }
 
         // Labels and buttons change to German language when clicked on German radio button
